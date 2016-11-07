@@ -59,6 +59,7 @@ np.random.seed(2)
 
 # A monkey patch to fix a bug in Keras with a higher version of Tensorflow (maybe in the near future keras can fix it)
 import tensorflow as tf
+
 tf.python.control_flow_ops = tf
 
 # Parameters
@@ -71,11 +72,11 @@ tf.python.control_flow_ops = tf
 Model Setting and Parameters
 """
 
-model_variation = 'CNN-non-static'  #  CNN-rand | CNN-non-static | CNN-static
+model_variation = 'CNN-non-static'  # CNN-rand | CNN-non-static | CNN-static
 print('Model variation is %s' % model_variation)
 
 # Model Hyperparameters
-embedding_dim = 20          
+embedding_dim = 20
 filter_sizes = (3, 4)
 num_filters = 3
 dropout_prob = (0.7, 0.8)
@@ -89,7 +90,7 @@ val_split = 0.1
 
 # Word2Vec parameters, see train_word2vec
 min_word_count = 1  # Minimum word count                        
-context = 10        # Context window size    
+context = 10  # Context window size
 
 # Data Preparatopn
 # ==================================================
@@ -110,14 +111,14 @@ x -> two dimensions. [sentence][word]
 y -> one dimension. [sentence]
 """
 
-if model_variation=='CNN-non-static' or model_variation=='CNN-static':
+if model_variation == 'CNN-non-static' or model_variation == 'CNN-static':
     embedding_weights = train_word2vec(x, vocabulary_inv, embedding_dim, min_word_count, context)
-    if model_variation=='CNN-static':
+    if model_variation == 'CNN-static':
         x = embedding_weights[0][x]
-elif model_variation=='CNN-rand':
+elif model_variation == 'CNN-rand':
     embedding_weights = None
 else:
-    raise ValueError('Unknown model variation')    
+    raise ValueError('Unknown model variation')
 
 # Shuffle data
 """
@@ -154,7 +155,7 @@ graph_in is actually the stacks of convolution layers and pooling layers
 graph_in = Input(shape=(sequence_length, embedding_dim))
 convs = []
 for fsz in filter_sizes:
-# highly recommand to put Batch Normalization here
+    # highly recommand to put Batch Normalization here
     conv = Convolution1D(nb_filter=num_filters,
                          filter_length=fsz,
                          border_mode='valid',
@@ -163,8 +164,8 @@ for fsz in filter_sizes:
     pool = MaxPooling1D(pool_length=2)(conv)
     flatten = Flatten()(pool)
     convs.append(flatten)
-    
-if len(filter_sizes)>1:
+
+if len(filter_sizes) > 1:
     out = Merge(mode='concat')(convs)
 else:
     out = convs[0]
@@ -184,7 +185,7 @@ softmax for classification
 """
 
 model = Sequential()
-if not model_variation=='CNN-static':
+if not model_variation == 'CNN-static':
     model.add(Embedding(len(vocabulary), embedding_dim, input_length=sequence_length,
                         weights=embedding_weights))
 model.add(Dropout(dropout_prob[0], input_shape=(sequence_length, embedding_dim)))
@@ -215,10 +216,9 @@ model.save('simple_net.h5')
 
 """
 you can predict the sentence in that way.
-
-x = load_data_chinese() #(change the input file, implement a flexible one in future)
-y=model.predict(x)
-dict = ['business', 'service', 'others', 'service', 'platform'] #(I choose the wrong csv as the second 'service' should be 'product')
-predict_label[i] = dict[y[i]]
-
 """
+# x = load_data_chinese() #(change the input file, implement a flexible one in future)
+
+
+
+
