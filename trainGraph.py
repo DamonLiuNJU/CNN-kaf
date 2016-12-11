@@ -54,6 +54,7 @@ from w2v import train_word2vec
 from keras.models import Sequential, Model
 from keras.layers import Activation, Dense, Dropout, Embedding, Flatten, Input, Merge, Convolution1D, MaxPooling1D
 from keras.utils import np_utils
+import sklearn
 
 np.random.seed(2)
 
@@ -85,7 +86,7 @@ sequence_length = 81
 
 # Training parameters
 batch_size = 32
-num_epochs = 100
+num_epochs = 20
 val_split = 0.1
 
 # Word2Vec parameters, see train_word2vec
@@ -206,19 +207,18 @@ model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['ac
 """
 train the model, validation_split shows the division of dataset, one val_split of dataset is used for validation while the rest is used for training
 """
-model.fit(x_shuffled, y_shuffled, batch_size=batch_size,
-          nb_epoch=num_epochs, validation_split=val_split, verbose=1)
+# model.fit(x_shuffled, y_shuffled, batch_size=batch_size,
+#           nb_epoch=num_epochs, validation_split=val_split, verbose=1)
 
 """
 Save the net configuration and the trained model for future fine-tuning
 """
-model.save('simple_net.h5')
+# model.save('simple_net.h5')
 
 """
 you can predict the sentence in that way.
 """
+from sklearn import model_selection as ms
+score = ms.cross_val_score(model, x_shuffled, y_shuffled, cv=10, n_jobs=-1, verbose=1)
+
 # x = load_data_chinese() #(change the input file, implement a flexible one in future)
-
-
-
-
