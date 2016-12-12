@@ -134,7 +134,7 @@ y_shuffled = y[shuffle_indices]
 from [0,5} -> [0-1], [0-1] ... (print the y_shuffled to ensure that)
 You can find why use this kind of conversion in future
 """
-nb_classes = 5
+nb_classes = 4
 y_shuffled = np_utils.to_categorical(y_shuffled, nb_classes)
 
 print("Vocabulary Size: {:d}".format(len(vocabulary)))
@@ -207,18 +207,18 @@ model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['ac
 """
 train the model, validation_split shows the division of dataset, one val_split of dataset is used for validation while the rest is used for training
 """
-# model.fit(x_shuffled, y_shuffled, batch_size=batch_size,
-#           nb_epoch=num_epochs, validation_split=val_split, verbose=1)
+model.fit(x_shuffled, y_shuffled, batch_size=batch_size,
+          nb_epoch=num_epochs, validation_split=val_split, verbose=1)
 
 """
 Save the net configuration and the trained model for future fine-tuning
 """
-# model.save('simple_net.h5')
+model.save('simple_net_sentiment_label_word2vec.h5-with-average-all-word-vec-for-all-words-not-adding up') # this model is generated using wordvec as sentence representation.
 
 """
 you can predict the sentence in that way.
 """
-from sklearn import model_selection as ms
-score = ms.cross_val_score(model, x_shuffled, y_shuffled, cv=10, n_jobs=-1, verbose=1)
+# from sklearn import model_selection as ms
+# score = ms.cross_val_score(model, x_shuffled, y_shuffled, cv=10, n_jobs=-1, verbose=1)
 
 # x = load_data_chinese() #(change the input file, implement a flexible one in future)

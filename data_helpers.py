@@ -132,6 +132,11 @@ def batch_iter(data, batch_size, num_epochs):
 import jieba
 import csv
 
+dic = {u'好评': 3,
+       u'中评': 2,
+       u'差评': 1,
+       u'其他': 0}
+
 
 def load_data_and_labels_chinese():
     """
@@ -147,9 +152,9 @@ def load_data_and_labels_chinese():
     x_text = []
     y = []
 
-    label = -1;
+    # label = -1;
     for dir in dirs:
-        label += 1
+        # label += 1
         with open(dir, 'rb') as f:
             reader = csv.reader(f)
             all_list = list(reader)
@@ -158,6 +163,11 @@ def load_data_and_labels_chinese():
                 continue
             seq_list = jieba.cut(sentence[3])
             x_text.append(list(seq_list))
+            comment = sentence[3]
+            # print type(sentence[4])
+            tmp = sentence[4].decode('GBK')
+
+            label = dic[tmp]
             y.append(label)
     return x_text, y
 
@@ -174,6 +184,7 @@ def pad_sentences_chinese(x_text, pad_word='<PAD>'):
         new_x = x + [pad_word] * padding
         pad_x_text.append(new_x)
     return pad_x_text
+
 
 def my_pad_sentences_chinese(x_text, pad_word='<PAD>'):
     """
@@ -200,11 +211,33 @@ def build_vocab_chinese(x_text):
     return vocabulary, vocabulary_inv
 
 
+import gensim, numpy
+
+model = gensim.models.Word2Vec.load(u"./data/review.model.bin")
+
+
+def get_vector_for_unicode_word(word):
+    # if model.have
+    if word == '<PAD>':
+        vec = np.zeros(100, dtype=np.int)
+        return vec
+    return model[word]
+
+def get_vector_for_sentence(sentence):
+    vec = np.zeros(100, dtype=np.int)
+    for word in sentence:
+        vec += get_vector_for_unicode_word(word)
+    vec /= len(sentence)
+    return vec
+
+
 def build_input_data_chinese(sentences, labels, vocabulary):
     """
     list -> ndarray
     """
-    x = np.array([[vocabulary[word] for word in sentence] for sentence in sentences])
+    # x = np.array([[vocabulary[word] for word in sentence] for sentence in sentences])
+    # x = np.array([[get_vector_for_unicode_word(word) for word in sentence] for sentence in sentences])
+    x = np.array([get_vector_for_sentence(sentence) for sentence in sentences])
     y = np.array(labels)
     return x, y
 
