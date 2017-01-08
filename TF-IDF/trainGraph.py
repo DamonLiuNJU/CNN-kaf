@@ -48,13 +48,12 @@ instead of MaxPooling over whole feature map as in the article
 """
 
 import numpy as np
+from keras.layers import Activation, Dense, Dropout, Embedding, Flatten, Input, Merge, Convolution1D, MaxPooling1D
+from keras.models import Sequential, Model
+from keras.utils import np_utils
+
 import data_helpers
 from w2v import train_word2vec
-
-from keras.models import Sequential, Model
-from keras.layers import Activation, Dense, Dropout, Embedding, Flatten, Input, Merge, Convolution1D, MaxPooling1D
-from keras.utils import np_utils
-import sklearn
 
 np.random.seed(2)
 
@@ -82,11 +81,11 @@ filter_sizes = (3, 4)
 num_filters = 3
 dropout_prob = (0.7, 0.8)
 hidden_dims = 100
-sequence_length = 81
+sequence_length = 100
 
 # Training parameters
 batch_size = 32
-num_epochs = 20
+num_epochs = 10
 val_split = 0.1
 
 # Word2Vec parameters, see train_word2vec
@@ -134,7 +133,8 @@ y_shuffled = y[shuffle_indices]
 from [0,5} -> [0-1], [0-1] ... (print the y_shuffled to ensure that)
 You can find why use this kind of conversion in future
 """
-nb_classes = 4
+nb_classes = 5
+y_origin = y_shuffled
 y_shuffled = np_utils.to_categorical(y_shuffled, nb_classes)
 
 print("Vocabulary Size: {:d}".format(len(vocabulary)))
@@ -207,17 +207,37 @@ model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['ac
 """
 train the model, validation_split shows the division of dataset, one val_split of dataset is used for validation while the rest is used for training
 """
-model.fit(x_shuffled, y_shuffled, batch_size=batch_size,
-          nb_epoch=num_epochs, validation_split=val_split, verbose=1)
+# model.fit(x_shuffled, y_shuffled, batch_size=batch_size,
+#           nb_epoch=num_epochs, validation_split=val_split,verbose=1)
 
 """
 Save the net configuration and the trained model for future fine-tuning
 """
-model.save('simple_net_sentiment_label_word2vec.h5-with-average-all-word-vec-for-all-words-not-adding up') # this model is generated using wordvec as sentence representation.
+model.save('simple_net.h5') # this model is generated using wordvec as sentence representation.
 
 """
 you can predict the sentence in that way.
 """
+
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split, KFold
+
+from sklearn.ensemble import RandomForestClassifier
+
+kf = KFold(n_splits=10)
+for train_index, test_index in kf.split(x_shuffled):
+    # print "train : ", train_index, "test:", test_index
+    X_train, X_test = x_shuffled[train_index], x_shuffled[test_index]
+    y_train, y_test = y_origin[train_index], y_origin[test_index]
+    clf = RandomForestClassifier()
+    model = clf.fit(X_train, y_train)
+    print 'RandomForest Score: ', model.score(X_test, y_test)
+
+X_train, X_test, y_train, y_test = train_test_split(x_shuffled, y_origin, test_size=0.2, random_state=0)
+clf = SVC()
+model = clf.fit(X_train, y_train)
+print 'SVC : ', model.score(X_test, y_test)
+
 # from sklearn import model_selection as ms
 # score = ms.cross_val_score(model, x_shuffled, y_shuffled, cv=10, n_jobs=-1, verbose=1)
 

@@ -82,11 +82,63 @@ def build_vocab(sentences):
     return [vocabulary, vocabulary_inv]
 
 
+import math
+
+
+def get_TF_IDF(word, vocabulary, N, N1, sentence):
+    if word == '<PAD>': return 0
+    TF = 0.0
+    sentence_length = 0;
+    for tmp in sentence:
+        if tmp != '<PAD>':
+            sentence_length += 1
+        if tmp == word:
+            TF += 1.0
+    TF /= sentence_length
+    IDF = math.log(float(N) / float(N1), math.e)
+    return TF * IDF
+
+
+sentence_count_dic = {}
+
+
+def get_sentence_count(target, sentences):
+    return sentence_count_dic.get(target)
+
+
+def get_sentence_vector(sentence,vocabulary,sentences):
+    vec = np.zeros(100, dtype=np.float)
+    for word in sentence:
+        tf_idf = get_TF_IDF(word, vocabulary, len(sentences), get_sentence_count(word, sentences), sentence)
+        vec += (tf_idf * get_vector_for_unicode_word(word))
+    vec /= len(sentence)
+    return vec
+
+# def get_vector_for_sentence(sentence):
+#     vec = np.zeros(100, dtype=np.int)
+#     for word in sentence:
+#         vec += get_vector_for_unicode_word(word)
+#     vec /= len(sentence)
+#     return vec
+
 def build_input_data(sentences, labels, vocabulary):
     """
     Maps sentencs and labels to vectors based on a vocabulary.
     """
-    x = np.array([[vocabulary[word] for word in sentence] for sentence in sentences])
+    for sentence in sentences:
+        tmp_set = set()
+        for word in sentence:
+            if word == '<PAD>':
+                break
+            tmp_set.add(word)
+        for word in tmp_set:
+            if word in sentence_count_dic:
+                sentence_count_dic[word] += 1
+            else:
+                sentence_count_dic[word] = 1
+    print 'construct word in how many sentences finished'
+
+    x = np.array([get_sentence_vector(sentence,vocabulary,sentences) for sentence in sentences])
     y = np.array(labels)
     return [x, y]
 
@@ -143,18 +195,18 @@ def load_data_and_labels_chinese():
     x_text = [[word, word, word...], [word, word...], ...]
     y = [label, label...]
     """
-    dirs = ['./data/business.csv',
-            './data/service.csv',
-            './data/others.csv',
-            './data/product.csv',
-            './data/platform.csv']
+    dirs = ['../data/business.csv',
+            '../data/service.csv',
+            '../data/others.csv',
+            '../data/product.csv',
+            '../data/platform.csv']
 
     x_text = []
     y = []
 
-    # label = -1;
+    label = -1
     for dir in dirs:
-        # label += 1
+        label += 1
         with open(dir, 'rb') as f:
             reader = csv.reader(f)
             all_list = list(reader)
@@ -165,9 +217,9 @@ def load_data_and_labels_chinese():
             x_text.append(list(seq_list))
             comment = sentence[3]
             # print type(sentence[4])
-            tmp = sentence[4].decode('GBK')
+            # tmp = sentence[4].decode('GBK')   #sentence 4 means : emotion
 
-            label = dic[tmp]
+            # label = dic[tmp]
             y.append(label)
     return x_text, y
 
@@ -212,23 +264,27 @@ def build_vocab_chinese(x_text):
 
 
 import gensim, numpy
+import os
 
-model = gensim.models.Word2Vec.load(u"./data/review.model.bin")
+path = '../data/review.model.bin'
+print path
+
+model = gensim.models.Word2Vec.load(path)
 
 
 def get_vector_for_unicode_word(word):
     # if model.have
     if word == '<PAD>':
-        vec = np.zeros(100, dtype=np.int)
+        vec = np.zeros(100, dtype=np.float)
         return vec
+
+    if word not in model.vocab:
+        return np.zeros(100, dtype=np.float)
+
     return model[word]
 
-def get_vector_for_sentence(sentence):
-    vec = np.zeros(100, dtype=np.int)
-    for word in sentence:
-        vec += get_vector_for_unicode_word(word)
-    vec /= len(sentence)
-    return vec
+
+
 
 
 def build_input_data_chinese(sentences, labels, vocabulary):
@@ -268,6 +324,8 @@ def load_data_chinese():
     sentences_padded = pad_sentences_chinese(sentences)
     vocabulary, vocabulary_inv = build_vocab_chinese(sentences_padded)
     x, y = build_input_data(sentences_padded, labels, vocabulary)
+    print x[0]
+    print y[0]
     return x, y, vocabulary, vocabulary_inv
 
 

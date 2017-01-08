@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-import data_helpers
-import keras
 import sys
+
+import keras
+
+import data_helpers
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -17,7 +19,7 @@ x = data_helpers.my_get_input_sentence()
 model = keras.models.load_model('./simple_net.h5')
 y = model.predict(x)
 dict = ['business', 'service', 'others', 'product',
-        'platform']  # (I choose the wrong csv as the second 'service' should be 'product')
+        'platform']
 print y
 predict_label = []
 # for index in range(len(x)):
