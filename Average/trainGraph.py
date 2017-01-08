@@ -208,17 +208,11 @@ train the model, validation_split shows the division of dataset, one val_split o
 """
 # model.fit(x_shuffled, y_shuffled, batch_size=batch_size, nb_epoch=num_epochs, validation_split=val_split, verbose=1)
 
-from sklearn.svm import SVC
-import numpy as np
-from sklearn.model_selection import train_test_split,KFold
 
-# from sklearn import datasets
-# X_train, X_test, y_train, y_test = train_test_split(x_shuffled, y_shuffled, test_size=0.2, random_state=0)
-# clf = SVC()
-# model = clf.fit(X_train, y_train)
-# print 'SMC : ',model.score(X_test, y_test)
-
+from sklearn.model_selection import train_test_split, KFold
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+
 kf = KFold(n_splits=10)
 for train_index, test_index in kf.split(x_shuffled):
     print "train : ", train_index, "test:", test_index
@@ -227,6 +221,11 @@ for train_index, test_index in kf.split(x_shuffled):
     clf = RandomForestClassifier()
     model = clf.fit(X_train, y_train)
     print 'RandomForest Score: ', model.score(X_test, y_test)
+
+X_train, X_test, y_train, y_test = train_test_split(x_shuffled, y_shuffled, test_size=0.2, random_state=0)
+clf = SVC()
+model = clf.fit(X_train, y_train)
+print 'SVM : ', model.score(X_test, y_test)
 
 """
 Save the net configuration and the trained model for future fine-tuning

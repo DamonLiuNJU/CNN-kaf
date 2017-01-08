@@ -2,35 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4bc1f23-8662-452a-b106-0c38603dce4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BOW(各种模型)/simple_net.h5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TF-IDF/simple_net.h5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BOW(各种模型)/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BOW(各种模型)/data_helpers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BOW(各种模型)/trainGraph.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BOW(各种模型)/w2v.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TF-IDF/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TF-IDF/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TF-IDF/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TF-IDF/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TF-IDF/testModel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TF-IDF/trainGraph.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TF-IDF/w2v.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TF-IDF/word2vec_models/20features_1minwords_10context" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/data_helpers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/testModel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/word2vec_models/20features_1minwords_10context" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simple_net.h5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simple_net_sentiment_label.h5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simple_net_sentiment_label_word2vec.h5-for-all-words-not-adding up" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simple_net_sentiment_label_word2vec.h5-with-average-all-word-vec" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/BOW(各种模型)/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/BOW(各种模型)/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/BOW(各种模型)/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data_helpers.py" afterPath="$PROJECT_DIR$/TF-IDF/data_helpers.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/testModel.py" afterPath="$PROJECT_DIR$/BOW(各种模型)/testModel.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/trainGraph.py" afterPath="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/trainGraph.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/w2v.py" afterPath="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/w2v.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/word2vec_models/20features_1minwords_10context" afterPath="$PROJECT_DIR$/BOW(各种模型)/word2vec_models/20features_1minwords_10context" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Word2VEC_java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BOW(各种模型)/.gitignore" afterPath="$PROJECT_DIR$/BOW/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BOW(各种模型)/LICENSE" afterPath="$PROJECT_DIR$/BOW/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BOW(各种模型)/README.md" afterPath="$PROJECT_DIR$/BOW/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BOW(各种模型)/__init__.py" afterPath="$PROJECT_DIR$/BOW/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BOW(各种模型)/data_helpers.py" afterPath="$PROJECT_DIR$/BOW/data_helpers.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BOW(各种模型)/simple_net.h5" afterPath="$PROJECT_DIR$/BOW/simple_net.h5" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BOW(各种模型)/testModel.py" afterPath="$PROJECT_DIR$/BOW/testModel.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BOW(各种模型)/trainGraph.py" afterPath="$PROJECT_DIR$/BOW/trainGraph.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BOW(各种模型)/w2v.py" afterPath="$PROJECT_DIR$/BOW/w2v.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BOW(各种模型)/word2vec_models/20features_1minwords_10context" afterPath="$PROJECT_DIR$/Average/word2vec_models/20features_1minwords_10context" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/data_helpers.py" afterPath="$PROJECT_DIR$/Average/data_helpers.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/testModel.py" afterPath="$PROJECT_DIR$/Average/testModel.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/trainGraph.py" afterPath="$PROJECT_DIR$/Average/trainGraph.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/w2v.py" afterPath="$PROJECT_DIR$/Average/w2v.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/word2vec_models/20features_1minwords_10context" afterPath="$PROJECT_DIR$/BOW/word2vec_models/20features_1minwords_10context" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TF-IDF/trainGraph.py" afterPath="$PROJECT_DIR$/TF-IDF/trainGraph.py" />
     </list>
     <ignored path="CNN-Kaf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,10 +35,11 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CNN-Kaf$trainGraph__3_.coverage" NAME="trainGraph (3) Coverage Results" MODIFIED="1483171623662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CNN+BOW" />
     <SUITE FILE_PATH="coverage/CNN-Kaf$data_helpers.coverage" NAME="data_helpers Coverage Results" MODIFIED="1483168784401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CNN+BOW" />
-    <SUITE FILE_PATH="coverage/CNN-Kaf$trainGraph__4_.coverage" NAME="trainGraph (4) Coverage Results" MODIFIED="1483273208088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TF-IDF" />
-    <SUITE FILE_PATH="coverage/CNN-Kaf$trainGraph__1_.coverage" NAME="trainGraph (1) Coverage Results" MODIFIED="1483166718735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UsingWordVectorAverage" />
-    <SUITE FILE_PATH="coverage/CNN-Kaf$trainGraph.coverage" NAME="trainGraph Coverage Results" MODIFIED="1483156345355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CNN-Kaf$trainGraph__2_.coverage" NAME="trainGraph (2) Coverage Results" MODIFIED="1483168296833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SVM+计算词向量的平均值" />
+    <SUITE FILE_PATH="coverage/CNN-Kaf$trainGraph__4_.coverage" NAME="trainGraph (4) Coverage Results" MODIFIED="1483873898593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TF-IDF" />
+    <SUITE FILE_PATH="coverage/CNN-Kaf$trainGraph__1_.coverage" NAME="trainGraph (1) Coverage Results" MODIFIED="1483873563849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)" />
+    <SUITE FILE_PATH="coverage/CNN-Kaf$trainGraph__5_.coverage" NAME="trainGraph (5) Coverage Results" MODIFIED="1483873959372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BOW" />
+    <SUITE FILE_PATH="coverage/CNN-Kaf$trainGraph.coverage" NAME="trainGraph Coverage Results" MODIFIED="1483873422679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BOW(各种模型)" />
+    <SUITE FILE_PATH="coverage/CNN-Kaf$trainGraph__2_.coverage" NAME="trainGraph (2) Coverage Results" MODIFIED="1483873926986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Average" />
     <SUITE FILE_PATH="coverage/CNN-Kaf$testModel.coverage" NAME="testModel Coverage Results" MODIFIED="1483153355875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNN-Kaf$data_helpers__1_.coverage" NAME="data_helpers (1) Coverage Results" MODIFIED="1483155704455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UsingWordVectorAverage" />
   </component>
@@ -72,35 +63,87 @@
       <file leaf-file-name="trainGraph.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TF-IDF/trainGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3075">
-              <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+            <state relative-caret-position="247">
+              <caret line="201" column="3" selection-start-line="201" selection-start-column="3" selection-end-line="201" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="trainGraph.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py">
+        <entry file="file://$PROJECT_DIR$/Average/trainGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3390">
-              <caret line="232" column="28" selection-start-line="232" selection-start-column="28" selection-end-line="232" selection-end-column="28" />
+            <state relative-caret-position="339">
+              <caret line="225" column="11" selection-start-line="225" selection-start-column="11" selection-end-line="225" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_helpers.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="trainGraph.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BOW/trainGraph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="60" column="17" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="17" />
+              <folding>
+                <element signature="e#1714#1732#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_helpers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TF-IDF/data_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="117" column="18" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
+            <state relative-caret-position="2565">
+              <caret line="290" column="7" selection-start-line="290" selection-start-column="7" selection-end-line="290" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BOW/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="data_helpers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/data_helpers.py">
+        <entry file="file://$PROJECT_DIR$/BOW/data_helpers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1748">
+              <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testModel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BOW/testModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BOW/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_helpers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Average/data_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3330">
               <caret line="225" column="44" selection-start-line="224" selection-start-column="3" selection-end-line="225" selection-end-column="44" />
@@ -134,6 +177,8 @@
         <option value="$PROJECT_DIR$/CNN+BOW/data_helpers.py" />
         <option value="$PROJECT_DIR$/CNN+BOW/trainGraph.py" />
         <option value="$PROJECT_DIR$/TF-IDF/data_helpers.py" />
+        <option value="$PROJECT_DIR$/BOW(各种模型)/trainGraph.py" />
+        <option value="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/trainGraph.py" />
         <option value="$PROJECT_DIR$/TF-IDF/trainGraph.py" />
       </list>
     </option>
@@ -145,8 +190,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="-279" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -191,6 +238,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CNN-Kaf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CNN-Kaf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TF-IDF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CNN-Kaf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CNN-Kaf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BOW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CNN-Kaf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CNN-Kaf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Average" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -216,79 +305,7 @@
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.trainGraph (4)">
-    <configuration default="false" name="trainGraph (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UsingWordVectorAverage" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CNN-Kaf" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UsingWordVectorAverage/trainGraph.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="trainGraph (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SVM+计算词向量的平均值" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CNN-Kaf" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVM+计算词向量的平均值/trainGraph.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="trainGraph (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CNN+BOW" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CNN-Kaf" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN+BOW/trainGraph.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="data_helpers" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CNN+BOW" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CNN-Kaf" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN+BOW/data_helpers.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.trainGraph (5)">
     <configuration default="false" name="trainGraph (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,6 +320,78 @@
       <module name="CNN-Kaf" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TF-IDF/trainGraph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="trainGraph" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BOW(各种模型)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CNN-Kaf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BOW(各种模型)/trainGraph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="trainGraph (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CNN-Kaf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/trainGraph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="trainGraph (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Average" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CNN-Kaf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Average/trainGraph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="trainGraph (5)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BOW" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CNN-Kaf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BOW/trainGraph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -516,19 +605,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.trainGraph (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.trainGraph (2)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.trainGraph (3)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.data_helpers" />
-      <item index="4" class="java.lang.String" itemvalue="Python.trainGraph (4)" />
+      <item index="0" class="java.lang.String" itemvalue="Python.trainGraph (4)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.trainGraph" />
+      <item index="2" class="java.lang.String" itemvalue="Python.trainGraph (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.trainGraph (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.trainGraph (5)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.trainGraph (4)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.trainGraph (3)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.data_helpers" />
-        <item index="3" class="java.lang.String" itemvalue="Python.trainGraph (2)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.trainGraph (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.trainGraph (5)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.trainGraph (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.trainGraph (4)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.trainGraph (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.trainGraph" />
       </list>
     </recent_temporary>
   </component>
@@ -555,27 +644,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="-279" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24717286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1629393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33960396" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37227723" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33972603" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37227723" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -593,94 +682,89 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py</url>
+          <url>file://$PROJECT_DIR$/BOW/data_helpers.py</url>
           <line>272</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py</url>
+          <url>file://$PROJECT_DIR$/BOW/data_helpers.py</url>
           <line>90</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py</url>
+          <url>file://$PROJECT_DIR$/BOW/trainGraph.py</url>
           <line>126</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py</url>
+          <url>file://$PROJECT_DIR$/BOW/trainGraph.py</url>
           <line>139</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py</url>
+          <url>file://$PROJECT_DIR$/BOW/trainGraph.py</url>
           <line>113</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py</url>
+          <url>file://$PROJECT_DIR$/BOW/data_helpers.py</url>
           <line>276</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/testModel.py</url>
+          <url>file://$PROJECT_DIR$/BOW/testModel.py</url>
           <line>29</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/testModel.py</url>
+          <url>file://$PROJECT_DIR$/BOW/testModel.py</url>
           <line>20</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/testModel.py</url>
+          <url>file://$PROJECT_DIR$/BOW/testModel.py</url>
           <line>17</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py</url>
+          <url>file://$PROJECT_DIR$/BOW/trainGraph.py</url>
           <line>209</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py</url>
+          <url>file://$PROJECT_DIR$/BOW/data_helpers.py</url>
           <line>76</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py</url>
+          <url>file://$PROJECT_DIR$/BOW/data_helpers.py</url>
           <line>78</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py</url>
+          <url>file://$PROJECT_DIR$/BOW/data_helpers.py</url>
           <line>202</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py</url>
+          <url>file://$PROJECT_DIR$/BOW/data_helpers.py</url>
           <line>209</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py</url>
+          <url>file://$PROJECT_DIR$/BOW/data_helpers.py</url>
           <line>210</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py</url>
+          <url>file://$PROJECT_DIR$/BOW/trainGraph.py</url>
           <line>116</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py</url>
+          <url>file://$PROJECT_DIR$/BOW/trainGraph.py</url>
           <line>137</line>
           <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/trainGraph.py</url>
-          <line>208</line>
-          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TF-IDF/data_helpers.py</url>
@@ -716,11 +800,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py">
+    <entry file="file://$PROJECT_DIR$/BOW/trainGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3390">
           <caret line="232" column="28" selection-start-line="232" selection-start-column="28" selection-end-line="232" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#1714#1732#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -732,7 +818,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/data_helpers.py">
+    <entry file="file://$PROJECT_DIR$/Average/data_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3330">
           <caret line="225" column="44" selection-start-line="224" selection-start-column="3" selection-end-line="225" selection-end-column="44" />
@@ -748,39 +834,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py">
+    <entry file="file://$PROJECT_DIR$/BOW/trainGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1714#1732#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py">
+    <entry file="file://$PROJECT_DIR$/BOW/data_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3495">
           <caret line="233" column="50" selection-start-line="233" selection-start-column="50" selection-end-line="233" selection-end-column="50" />
-          <folding>
-            <element signature="e#56#74#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3225">
-          <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/testModel.py">
+    <entry file="file://$PROJECT_DIR$/BOW/trainGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3225">
+          <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
+          <folding>
+            <element signature="e#1714#1732#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOW/testModel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#34#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -791,13 +877,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py">
+    <entry file="file://$PROJECT_DIR$/BOW/data_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4005">
           <caret line="267" column="0" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
-          <folding>
-            <element signature="e#56#74#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -808,43 +892,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="106" column="56" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py">
+    <entry file="file://$PROJECT_DIR$/BOW/trainGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#56#74#0" expanded="false" />
+            <element signature="e#1714#1732#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOW/trainGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="106" column="56" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
+          <folding>
+            <element signature="e#1714#1732#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOW/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOW/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOW/data_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -855,7 +941,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/.gitignore">
+    <entry file="file://$PROJECT_DIR$/BOW/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -890,7 +976,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/word2vec_models/20features_1minwords_10context">
+    <entry file="file://$PROJECT_DIR$/BOW/word2vec_models/20features_1minwords_10context">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
@@ -911,13 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -925,7 +1004,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/w2v.py">
+    <entry file="file://$PROJECT_DIR$/BOW/w2v.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
@@ -939,21 +1018,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/testModel.py">
+    <entry file="file://$PROJECT_DIR$/Average/testModel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/word2vec_models/20features_1minwords_10context">
+    <entry file="file://$PROJECT_DIR$/Average/word2vec_models/20features_1minwords_10context">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/w2v.py">
+    <entry file="file://$PROJECT_DIR$/Average/w2v.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
@@ -999,34 +1078,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="386" column="6" selection-start-line="386" selection-start-column="6" selection-end-line="386" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/testModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="e#24#34#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/trainGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="228" column="61" selection-start-line="210" selection-start-column="0" selection-end-line="228" selection-end-column="61" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/data_helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2161">
-          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding>
-            <element signature="e#56#74#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,15 +1110,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOW(各种模型)/trainGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3390">
-          <caret line="232" column="28" selection-start-line="232" selection-start-column="28" selection-end-line="232" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/计算词向量的平均值(SVM&amp;RandomForest)/data_helpers.py">
+    <entry file="file://$PROJECT_DIR$/Average/data_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3330">
           <caret line="225" column="44" selection-start-line="224" selection-start-column="3" selection-end-line="225" selection-end-column="44" />
@@ -1074,19 +1118,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TF-IDF/trainGraph.py">
+    <entry file="file://$PROJECT_DIR$/TF-IDF/data_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3075">
-          <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+        <state relative-caret-position="2565">
+          <caret line="290" column="7" selection-start-line="290" selection-start-column="7" selection-end-line="290" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TF-IDF/data_helpers.py">
+    <entry file="file://$PROJECT_DIR$/BOW/testModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="117" column="18" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
+        <state relative-caret-position="195">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOW/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOW/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOW/data_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1748">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TF-IDF/trainGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="201" column="3" selection-start-line="201" selection-start-column="3" selection-end-line="201" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Average/trainGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="225" column="11" selection-start-line="225" selection-start-column="11" selection-end-line="225" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOW/trainGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="17" />
+          <folding>
+            <element signature="e#1714#1732#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

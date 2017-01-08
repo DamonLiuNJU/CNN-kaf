@@ -236,7 +236,7 @@ for train_index, test_index in kf.split(x_shuffled):
 X_train, X_test, y_train, y_test = train_test_split(x_shuffled, y_origin, test_size=0.2, random_state=0)
 clf = SVC()
 model = clf.fit(X_train, y_train)
-print 'SVC : ', model.score(X_test, y_test)
+print 'SVM : ', model.score(X_test, y_test)
 
 # from sklearn import model_selection as ms
 # score = ms.cross_val_score(model, x_shuffled, y_shuffled, cv=10, n_jobs=-1, verbose=1)

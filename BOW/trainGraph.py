@@ -207,9 +207,9 @@ model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['ac
 # """
 # train the model, validation_split shows the division of dataset, one val_split of dataset is used for validation while the rest is used for training
 # """
-# model.fit(x_shuffled, y_shuffled, batch_size=batch_size,
-#           nb_epoch=num_epochs, validation_split=val_split, verbose=1)
-#
+model.fit(x_shuffled, y_shuffled, batch_size=batch_size,
+          nb_epoch=num_epochs, validation_split=val_split, verbose=1)
+
 # """
 # Save the net configuration and the trained model for future fine-tuning
 # """
